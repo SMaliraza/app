@@ -5,20 +5,18 @@ const Child = (props) => {
     let cssprop = {
         color: "black"
     }
-    return(
+    return (
         <div>
-            {props.value.map((text) =>{
-                    return(
-                      <ol>
-                        <li className="pink" style={cssprop}> 
-                        {text}
-                         </li>
-                     </ol> 
-
+            <ol>
+                {props.value.map((text) => {
+                    return (
+                        <li className="pink" style={cssprop}>
+                            {text}
+                        </li>
                     )
-                } 
-            )}
-
+                }
+                )}
+            </ol>
         </div>
     )
 }
